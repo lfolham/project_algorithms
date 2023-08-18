@@ -6,7 +6,7 @@ def study_schedule(permanence_period, target_time):
     count = 0
 
     for period in permanence_period:
-        if not isinstance(period, tuple) or len(period) != 2 or period[0] > period[1]:
+        if len(period) != 2 or period[0] > period[1]:
             return None
 
         if period[0] <= target_time <= period[1]:
@@ -32,4 +32,4 @@ for time in target_times:
         best_time = time
 
 if best_time is not None:
-    print(f"O melhor horário é {best_time}, com {max_count} estudantes presentes.")
+    print(f"O melhor horário é {best_time}, com {max_count} presentes.")
