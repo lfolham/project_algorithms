@@ -1,14 +1,5 @@
-# O código deve ser feito dentro do arquivo `challenges/challenge_study_schedule.py`.
-# Qual horário tem a maior quantidade de pessoas estudantes acessando o conteúdo da plataforma
-# De acordo com o item acima, qual melhor horário para disponibilizar material de estudo
-# O horario de entrada e saida é cadastrado no bando de dados
-# Lista de tuplas: "permance_period"
-# Utilize a estratégia de resolução de problemas "força bruta"
-# Função chamada várias vezes com valores diferentes para a VAR "target_time" e serão analisados retornos da função.
-
-
 def study_schedule(permanence_period, target_time):
-# Retorne None se em permanence_period / target_time ;
+
     if not permanence_period or target_time is None:
         return None
 
